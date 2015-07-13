@@ -1,0 +1,39 @@
+/* Empty. Add your own CSS if you like */
+
+
+
+.Gmap{
+	height: 40em;
+	border: 1px solid #DDD;
+}
+
+.btnLimpiar{
+	float: left;
+	line-height: 2.2;
+	margin-right: 19px;
+	margin-left: 1.5em;
+}
+
+.list{
+	margin-top: 2px;
+}
+
+.panel{
+	margin-top: 10px;
+}
+
+.label_position{
+	width: 40%;
+}
+
+.selec_position{
+	float: left;
+}
+
+h6{
+	color: #E42012;
+}
+
+.items_menu{
+	color: #E42012;	
+}

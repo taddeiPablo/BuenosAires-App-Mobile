@@ -1,0 +1,21 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Ingrese su barrio</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="buscar()" ng-controller="main">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Barrio</span>
+          <input type="text" name="name" ng-model="barrioData.name">
+        </label>
+        <label class="item">
+          <button class="button button-full button-assertive" type="submit">Mostrar</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
