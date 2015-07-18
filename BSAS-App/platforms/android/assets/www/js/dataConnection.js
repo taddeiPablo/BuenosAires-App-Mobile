@@ -35,6 +35,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
                 
@@ -52,6 +53,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -70,6 +72,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -87,6 +90,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -104,6 +108,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -123,6 +128,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -142,6 +148,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -159,24 +166,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
-            console.log(e);
-        });
-
-        return deferred.promise;
-    }
-    //  Funcion por la cual se obtienen todas las rampas de accesibilidad 
-    //  para personas con mobilidad reducida dentro de la ciudad de buenos aires
-    //  se obtienen todas las rampas disponibles dentro de la ciudad
-    data_factory.rampas = function() {
-        deferred = $q.defer();
-        $http({
-            url: $rootScope.path.server + 'services/rampas',
-            method: 'GET',
-            params: {},
-            headers: { 'Content-Type': 'application/json;charset=utf-8' },
-        }).then(function (results) {
-            deferred.resolve(results);
-        }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -196,6 +186,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -215,6 +206,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -232,6 +224,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -249,6 +242,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 
@@ -266,6 +260,7 @@ app.factory('$Wservices', function($http, $q, $rootScope){
         }).then(function (results) {
             deferred.resolve(results);
         }).catch(function (e) {
+            deferred.resolve(e);
             console.log(e);
         });
 

@@ -18,66 +18,70 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
+        <ion-item menu-close ng-click="limpiar()">
+          <i class="ion-trash-a"></i>
+          Limpiar
+        </ion-item>
         <ion-item menu-close class="items_menu" ng-click="login()">
-          Barrio
           <i class="icon ion-search"></i>
+          Barrio
+        </ion-item>
+        <ion-item menu-close class="items_menu" ng-click="MiPosicion_click()">
+          <i class="ion-qr-scanner"></i>
+          Mi Posicion
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="cajeroAutomatico_click()">
-          Cajeros Automaticos
           <i class="ion-card"></i>
+          Cajeros Automaticos
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="farmacias_click()">
-          Farmacias
           <i class="ion-ios-medkit-outline"></i>
+          Farmacias
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="hospitales_click()">
-          Hospitales
           <i class="ion-ios-medkit"></i>
+          Hospitales
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="centrosVerdes_click()">
-          Centros Verdes
           <i class="ion-loop"></i>
+          Centros Verdes
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="ComisariaFederal_click()">
-          Comisarias Federal
           <i class="ion-android-star"></i>
+          Comisarias Federal
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="ComisariaMetro_click()">
-          Comisarias Metropolitana
           <i class="ion-android-star"></i>
+          Comisarias Metropolitana
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="CuartelBomberos_click()">
-          Cuarteles de Bomberos
           <i class="ion-ios-flame"></i>
-        </ion-item>
-        <ion-item menu-close class="items_menu" href="#" ng-click="Rampas_click()">
-          Rampas
-          <i class="ion-help-buoy"></i>
+          Cuarteles de Bomberos
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="BancosAccesibles_click()">
-          Bancos Accesibles
           <i class="ion-cash"></i>
           <i class="ion-help-buoy"></i>
+          Bancos Accesibles
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="EstablecimientosPublicos_click()">
-          Establecimientos Publicos
           <i class="ion-android-person"></i>
+          Establecimientos Publicos
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="RegistrosCiviles_click()">
-          Registros Civiles
           <i class="ion-ios-people"></i>
+          Registros Civiles
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="CentroDocRapidos_click()">
-          Centros de Doc Rapida
           <i class="ion-android-people"></i>
+          Centros de Doc Rapida
         </ion-item>
         <ion-item menu-close class="items_menu" href="#" ng-click="Embajadas_click()">
-          Embajadas
           <i class="ion-android-checkbox-outline-blank"></i>
+          Embajadas
         </ion-item>
         <ion-item menu-close href="#" ng-click="acercaDe()">
-          About applications
           <i class="ion-gear-b"></i>
+          About applications
         </ion-item>
       </ion-list>
     </ion-content>

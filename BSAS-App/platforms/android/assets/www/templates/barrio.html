@@ -10,10 +10,11 @@
       <div class="list">
         <label class="item item-input">
           <span class="input-label">Barrio</span>
-          <input type="text" name="name" ng-model="barrioData.name">
+          <input type="text" name="name" ng-model="barrioData.name" ng-keydown="validarBarrio(barrioData.name)">
         </label>
+        <strong class="validacion" ng-show="novalido">{{mensaje}}</strong>
         <label class="item">
-          <button class="button button-full button-assertive" type="submit">Mostrar</button>
+          <button class="button button-full button-assertive" type="submit" ng-disabled="btn_disabled">Mostrar</button>
         </label>
       </div>
     </form>

@@ -1,16 +1,7 @@
-<ion-view view-title="BSAS APP">
+<ion-view view-title="Buenos-Aires APP">
   <ion-content ng-controller="main" ng-init="loadMap()">
-  	<div id="container">
-  		<div id="map-canvas" class="Gmap"></div>
-      <div class="panel">
-        <button class="button button-assertive btnLimpiar" ng-click="limpiar()">
-          Limpiar
-        </button>
-        <label class="checkbox label_position">
-            <input type="checkbox" class="selec_position" ng-checked="posicion" ng-click="MiPosicion_click()">
-            <h6>Tu Posicion</h6>
-        </label>
-      </div>
+    <div id="container">
+  		<div id="map-canvas" class="Gmap" data-tap-disabled="true"></div>
   	</div>
   </ion-content>
 </ion-view>
