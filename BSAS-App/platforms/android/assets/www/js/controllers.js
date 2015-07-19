@@ -11,8 +11,15 @@ angular.module('starter.controllers', ['dataConn'])
   
   // Form data for the login modal
   $scope.BarrioData = {};
+  $scope.barrioData;
   $scope.return_services;
+  //  estas variables se utilizan para validar el formulario
+  //  del ingreso del barrio
   $scope.position = false;
+  $scope.mensaje;
+  $scope.novalido = true;
+  $scope.btn_disabled = true;
+  $scope.mensaje = "ingrese su barrio por favor !";
 
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/barrio.html', {
@@ -23,6 +30,9 @@ angular.module('starter.controllers', ['dataConn'])
 
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
+    $scope.novalido = false;
+    $scope.btn_disabled = false;
+    $scope.mensaje = "ingrese su barrio por favor !";
     $scope.modal.hide();
   };
 
@@ -565,6 +575,7 @@ angular.module('starter.controllers', ['dataConn'])
       $rootScope.map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
       $rootScope.barrio = undefined;
+      //$rootScope.MiPosicion = undefined;
   };
   //  Funcion por la cual muestro mi posicion en el mapa
   $scope.MiPosicion_click = function() {
@@ -587,17 +598,27 @@ angular.module('starter.controllers', ['dataConn'])
   $scope.acercaDelCreador = function() {
       $scope.acercaDe();
   };
+  //  Desde esta funcion se cierra la aplicacion
+  $scope.closeApp = function() {
+    var confirmPopup = $ionicPopup.confirm({
+     title: 'Atencion',
+     template: 'Esta seguro que desea salir ?'
+    });
+    confirmPopup.then(function(res) {
+        if(res) {
+            navigator.app.exitApp();
+        }
+    });
+  };
 })
 //  CONTROLADOR DEL LAYOUT PRINCIPAL, Y BUSQUEDA DEL BARRIO
 .controller('main', function($scope, $rootScope, $timeout, $ionicPopup, $Wservices, $ionicLoading) {
     $scope.return_services;
-    $scope.novalido = true;
-    $scope.mensaje;
-    $scope.btn_disabled = true;
+
     //  se valida que el campo no quede en blanco
     $scope.validarBarrio = function(values) {
         if(values != "") {
-            $scope.novalido = true;
+            $scope.novalido = false;
             $scope.btn_disabled = false;          
         }else{
             $scope.novalido = true;
@@ -661,7 +682,8 @@ angular.module('starter.controllers', ['dataConn'])
         });
       $timeout(function() {
         $scope.barrioData.name = "";
-        $scope.btn_disabled = false;
+        $scope.novalido = true;
+        $scope.btn_disabled = true;
         $scope.closeLogin();
       }, 1000);
     };
