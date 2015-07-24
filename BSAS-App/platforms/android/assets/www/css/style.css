@@ -40,24 +40,24 @@ h6{
 }
 
 .items_menu{
-	color: #E42012;	
+	color: #EB9E02;	
 }
 
 h3{
-	color: #E42012;
+	color: #EB9E02;
 }
 
 h4{
-	color: #E42012;
+	color: #EB9E02;
 }
 
 h5{
-	color: #E42012;
+	color: #EB9E02;
 	margin: auto;
 }
 
 h6{
-	color: #E42012;
+	color: #EB9E02;
 }
 
 .validacion{
@@ -68,6 +68,16 @@ h6{
 .content{
 	margin: auto;
 }
+
+.newColor{
+	background: #FFE603;
+	background: -webkit-gradient(center top , #FFE603, #FFBD04);
+	background-image: -webkit-gradient(center top , #FFE603, #FFBD04);
+	background: -moz-linear-gradient(center top , #FFE603, #FFBD04);
+	background: -ms-linear-gradient(center top , #FFE603, #FFBD04);
+	background: -o-linear-gradient(center top , #FFE603, #FFBD04);
+}
+
 
 /*====== MEDIAS QUERY PARA DISTINTAS RESOLUCIONES DE PANTALLAS =====*/
 
